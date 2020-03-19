@@ -64,6 +64,9 @@ function handleClick(event) {
 
 function init() {
   // done TODO: заказчик просил отдельную кнопку, запускающую игру а не просто по загрузке
+  $("#button-start").click(function() {
+      $(".orange-field").removeClass('miss');
+  })
   $("#button-start").click(round);
   $(".game-field").click(handleClick);
   $("#button-reload").click(function() {
